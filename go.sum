@@ -1,0 +1,4 @@
+github.com/jnovack/flag v1.16.0 h1:gJC3JVofq/hNGlNfki4NlIWLOiDkaeLNUOCzznCablU=
+github.com/jnovack/flag v1.16.0/go.mod h1:8g1MmrEr03yquMjIe6CYeXUiIsZ46ssYt+o3X7uEjcg=
+github.com/sijms/go-ora/v2 v2.5.26 h1:Pu7NidvzeXaP/RtLBvjt49j4vzhpsPj0puIk26I5pms=
+github.com/sijms/go-ora/v2 v2.5.26/go.mod h1:EHxlY6x7y9HAsdfumurRfTd+v8NrEOTR3Xl4FWlH6xk=

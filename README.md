@@ -2,7 +2,7 @@
 
 ![main pipeline](https://github.com/mdementyev/wait-for-oracle/actions/workflows/docker-publish.yml/badge.svg)
 ![docker pulls](https://img.shields.io/docker/pulls/mdementyev/wait-for-oracle.svg)
-![Docker Image Size](https://badgen.net/docker/size/mdementyev/wait-for-oracle?icon=docker&label=image%20size)
+![docker image size](https://badgen.net/docker/size/mdementyev/wait-for-oracle?label=image%20size)
 ![Github last-commit](https://img.shields.io/github/last-commit/mdementyev/wait-for-oracle.svg)
 
 It's like [wait-for-it.sh](https://github.com/vishnubob/wait-for-it), but for Oracle databases.
@@ -11,15 +11,6 @@ It's like [wait-for-it.sh](https://github.com/vishnubob/wait-for-it), but for Or
 * Go v1.18 or later
 
 ## Usage
-To run the program, you need to provide the following information:
-
-* Oracle database user
-* Oracle database password
-* Oracle database host
-* Oracle database port (defaults to 1521)
-* Oracle database SID
-* Timeout in seconds (defaults to 120)
-
 You can pass the information as command-line arguments:
 
 ```bash
@@ -39,13 +30,15 @@ export ORACLE_TIMEOUT=<timeout>
 ./wait-for-oracle
 ```
 
-## Options
+### Options
 * `--user` or `ORACLE_USER`: Oracle database user
 * `--password` or `ORACLE_PASSWORD`: Oracle database password
 * `--host` or `ORACLE_HOST`: Oracle database host
 * `--port` or `ORACLE_PORT`: Oracle database port (default: 1521)
 * `--sid` or `ORACLE_SID`: Oracle database SID
-* `--timeout` or `ORACLE_TIMEOUT`: Timeout in seconds (default: 120)
+* `--timeout` or `ORACLE_TIMEOUT`: Timeout in seconds (default: 0)
+
+If timeout is not specified or is 0, the program will wait indefinitely.
 
 ## Output
 The program will either print "Connected" if the connection to the database is successful and exit with code 0, or "Timeout" if the connection could not be established within the specified timeout (exit code 1).

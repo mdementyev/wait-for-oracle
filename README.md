@@ -1,5 +1,10 @@
 # wait-for-oracle
 
+![main pipeline](https://github.com/mdementyev/wait-for-oracle/actions/workflows/docker-publish.yml/badge.svg)
+![docker pulls](https://img.shields.io/docker/pulls/mdementyev/wait-for-oracle.svg)
+![Docker Image Size](https://badgen.net/docker/size/mdementyev/wait-for-oracle?icon=docker&label=image%20size)
+![Github last-commit](https://img.shields.io/github/last-commit/mdementyev/wait-for-oracle.svg)
+
 It's like [wait-for-it.sh](https://github.com/vishnubob/wait-for-it), but for Oracle databases.
 
 ## Requirements
